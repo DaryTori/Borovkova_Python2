@@ -16,6 +16,7 @@ t = False
 while n > 1:
     if n % 10 == 2:
         t = True
+        break
     n = n // 10
 
 if t:
