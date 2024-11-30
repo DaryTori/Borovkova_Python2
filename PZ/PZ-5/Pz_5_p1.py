@@ -2,8 +2,8 @@
 
 def su(lst):
     summa = 0
-    for el in lst:
-        summa += el
+    for i in lst:
+        summa += i
     return summa
 
 els = []
