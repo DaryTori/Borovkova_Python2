@@ -21,4 +21,4 @@ result = check_alphabetical_order(strochka)
 if result != 0:
     print('Алфавитный порядок нарушается на символе номер', result)
 else:
-    print('Алфовитный порядок не нарушается.')
+    print('Алфавитный порядок не нарушается,', result)
