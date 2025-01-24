@@ -18,4 +18,7 @@ def check_alphabetical_order(input_string):
 
 result = check_alphabetical_order(strochka)
 
-print(result)
+if result != 0:
+    print('Алфавитный порядок нарушается на символе номер', result)
+else:
+    print('Алфовитный порядок не нарушается.')
