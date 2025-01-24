@@ -8,11 +8,11 @@ def check_alphabetical_order(input_string):
     prev_char = ''
     count = 0
     for char in input_string:
+        count += 1
         if 'a' <= char <= 'z':
             if prev_char != '' and char < prev_char:
                 return count
             prev_char = char
-        count += 1
     return 0
 
 
