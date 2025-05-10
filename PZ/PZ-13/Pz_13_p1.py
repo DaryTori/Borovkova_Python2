@@ -2,13 +2,6 @@
 
 import random
 
-def udvoi_matrix(mx):
-    for i in range(len(mx)):
-        for j in range(len(mx)):
-            if i == j:
-                mx[i][j] *= 2
-    return mx
-
 n = input("Введите размер матрицы: ")
 while type(n) != int:  # обработка исключений
     try:
@@ -23,7 +16,7 @@ print("Изначальная матрица:")
 for strok in matrix:
     print(strok)
 
-matrix = udvoi_matrix(matrix)
+matrix = [[ele * 2 if i == j else ele for i, ele in enumerate(strok)] for j, strok in enumerate(matrix)]
 print('Изменённая матрица:')
 for strok in matrix:
     print(strok)
