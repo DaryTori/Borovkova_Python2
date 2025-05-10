@@ -19,7 +19,7 @@ while type(m) != int:  # обработка исключений
         print("Неправильно ввели!")
         m = input("Введите количество строк матрицы: ")
 
-matrix = [[random.randint(1, 50) for ele in range(n)] for strok in range(m)]
+matrix = [[random.randint(-50, 50) for ele in range(n)] for strok in range(m)]
 
 print("Матрица:")
 for strok in matrix:
@@ -29,6 +29,6 @@ chot = [ele for strok in matrix for ele in strok if ele > 0 and ele % 2 == 0]
 summa = sum(chot)
 average = summa / len(chot) 
 
-print("Положительные чётные элементы:", *chot)
+print("Положительные чётные элементы:", chot)
 print("Сумма:", summa)
 print("Среднее арифметическое:", average)
