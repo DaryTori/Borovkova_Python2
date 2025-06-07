@@ -11,7 +11,7 @@ import re
 with open("hotline.txt", "r", encoding="utf-8") as file:
     stroki = file.readlines()
 
-phone = re.compile(r'\d{11}')
+phone = re.compile(r'\b\d{11}')
 
 correct_phones = []
 incorrect_phones = []
