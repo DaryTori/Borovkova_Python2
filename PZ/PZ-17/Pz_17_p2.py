@@ -6,11 +6,11 @@ from tkinter import ttk
 
 def f(s):
     try: return "Число является четным" if int(s) % 2 == 0 else "Число не является четным"
-    except: return "NOT INT"
+    except: return "Не число"
 
 root = tk.Tk()
 root.title("Проверка чётности")
-root.geometry("500x300")
+root.geometry("200x80")
 
 s = tk.StringVar()
 
