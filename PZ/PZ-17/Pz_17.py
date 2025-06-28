@@ -15,25 +15,25 @@ tk.Label(frame, text="Анкета Web-разработчика", font=("Arial",
 
 tk.Label(frame, text="Регистрационное имя").grid(row=1, column=0, sticky="e")
 entry_username = tk.Entry(frame)
-entry_username.grid(row=1, column=1, columnspan=2, sticky="we")
+entry_username.grid(row=1, column=1, sticky="we")
 
 tk.Label(frame, text="Пароль").grid(row=2, column=0, sticky="e")
 entry_password = tk.Entry(frame, show="*")
 entry_password.grid(row=2, column=1, sticky="we")
 
-tk.Label(frame, text="Подтвердите пароль").grid(row=2, column=2, sticky="w")
+tk.Label(frame, text=":подтвердите пароль").grid(row=3, column=2, sticky="w")
 entry_confirm = tk.Entry(frame, show="*")
-entry_confirm.grid(row=3, column=1, columnspan=2, sticky="we")
+entry_confirm.grid(row=3, column=1, sticky="we")
 
 tk.Label(frame, text="Ваша специализация").grid(row=4, column=0, sticky="e")
 specialization = ttk.Combobox(frame, values=["Web-мастер", "Backend", "Frontend", "Fullstack"])
 specialization.current(0)
-specialization.grid(row=4, column=1, columnspan=2, sticky="we")
+specialization.grid(row=4, column=1, sticky="we")
 
 tk.Label(frame, text="Пол").grid(row=5, column=0, sticky="e")
 gender_var = tk.StringVar()
-tk.Radiobutton(frame, text="М", variable=gender_var, value="M").grid(row=5, column=1, sticky="w")
-tk.Radiobutton(frame, text="Ж", variable=gender_var, value="F").grid(row=5, column=1)
+tk.Radiobutton(frame, text="М", state=tk.ACTIVE, variable=gender_var, value="M").grid(row=5, column=1, sticky="w")
+tk.Radiobutton(frame, text="Ж", state=tk.NORMAL, variable=gender_var, value="F").grid(row=5, column=1)
 
 tk.Label(frame, text="Ваши навыки").grid(row=6, column=0, sticky="ne")
 skills = [
